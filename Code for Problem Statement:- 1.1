@@ -1,0 +1,14 @@
+class Triangle:
+    def __init__(self,i,j,k):
+        self.i=i
+        self.j=j
+        self.k=k
+    def are(self):
+        s=(self.i+self.j+self.k)/2
+        are=(s*(s-self.i)*(s-self.j)*(s-self.k))**0.5
+        return are
+i=float(input("Enter a length of side i:"))
+j=float(input("Enter a length of side j:"))
+k=float(input("Enter a length of side k:"))
+tri=Triangle(i,j,k)
+print("Area of trianle is {}".format(tri.are()))
